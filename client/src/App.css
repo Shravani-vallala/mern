@@ -71,3 +71,23 @@
     height: 40vh;
     color: white;
 }
+.pashu-icon {
+  color: #DB572B;
+}
+
+.nav-link {
+    color: black !important;
+    padding-block: 15px !important;
+}
+
+.pashu-button {
+  background-color: #DB572B !important;
+  border-color: #DB572B !important;
+  color: white !important;
+}
+
+.pashu-button:hover {
+  background-color: #DB572B !important;
+  border-color: #DB572B !important;
+}
+
