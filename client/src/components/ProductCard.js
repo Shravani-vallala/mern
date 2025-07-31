@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
+import '../App.css'; // Make sure to import your CSS file
 
 function ProductCard({ product }) {
   return (
@@ -8,7 +9,7 @@ function ProductCard({ product }) {
       <Card.Body>
         <Card.Title>{product.name}</Card.Title>
         <Card.Text>{product.price} ₹</Card.Text>
-        <Button variant="danger">Add to Cart</Button>
+        <Button className="pashu-button">Add to Cart</Button>
       </Card.Body>
     </Card>
   );
