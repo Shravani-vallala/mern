@@ -1,0 +1,73 @@
+.btn-custom {
+    background-color: #d63384;
+    color: white;
+}
+
+.pink-custom {
+    color: #d63384;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 20px;
+}
+
+.nav-item:hover {
+    background-color: blue;
+}
+
+.nav-link {
+    color: white !important;
+    padding-block: 15px !important;
+}
+
+.course-inner-one {
+    background-color: #0000ff78;
+}
+
+.course-inner-two {
+    background-color: #ff006178;
+}
+
+.course-inner-three {
+    background-color: #00ff5f78;
+}
+
+.logo img {
+    width: 250px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.circle-initials {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #d63384;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.instructor-card {
+    border-radius: 20px;
+}
+
+.partner-info {
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    color: white;
+}
