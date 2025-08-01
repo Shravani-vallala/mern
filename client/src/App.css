@@ -91,3 +91,132 @@
   border-color: #DB572B !important;
 }
 
+
+.hero-pair-wrapper {
+  position: relative;
+  max-width: 1400px;
+  margin: 24px auto;
+  padding: 8px 0 10px;
+  overflow: visible;
+  font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+
+.hero-pair {
+  display: flex;
+  gap: 16px;
+}
+
+.pair-slide {
+  flex: 1 1 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 225px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Transparent overlay that keeps image visible */
+.overlay {
+  position: relative;
+  /* background: rgba(255, 255, 255, 0.15);*/
+  /* backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(8px);  */
+  padding: 16px 24px;
+  border-radius: 10px;
+  max-width: 420px;
+  text-align: center;
+  color: #1f2937;
+  box-shadow: 0 12px 35px -5px rgba(0,0,0,0.12);
+  /* border: 1px solid rgba(255,255,255,0.2); */
+}
+
+.overlay h2 {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(8px); 
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.overlay button {
+  margin-top: 10px;
+  background: #DB572B;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* arrows for navigation */
+.arrow {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(8px); 
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* background: rgba(255,255,255,0.9); */
+  border: none;
+  padding: 5px 8px;
+  border-radius: 10%;
+  cursor: pointer;
+  font-size: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  z-index: 2;
+}
+
+.arrow.prev {
+  left: 8px;
+}
+
+.arrow.next {
+  right: 8px;
+}
+
+/* paging dots */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,0.2);
+  background: rgba(255,255,255,0.6);
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.dot.selected {
+  background: #DB572B;
+  border-color: #DB572B;
+  transform: scale(1.2);
+}
+
+/* responsive: stack on narrow */
+@media (max-width: 900px) {
+  .hero-pair {
+    flex-direction: column;
+  }
+  .arrow.prev {
+    left: 4px;
+  }
+  .arrow.next {
+    right: 4px;
+  }
+}
+
+
