@@ -1,5 +1,4 @@
 import React from 'react';
-import HeroSection from '../components/HeroSection';
 import ProductCard from '../components/ProductCard';
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -18,7 +17,6 @@ const sampleProducts = [
 function Home() {
   return (
     <div>
-      <HeroSection />
       <Container>
         <h2 className="my-4">Popular Products</h2>
         <Row>
