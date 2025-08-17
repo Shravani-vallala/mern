@@ -135,14 +135,27 @@
 }
 
 .overlay h2 {
-  background: rgba(255, 255, 255, 0.15);
+  /* background: rgba(255, 255, 255, 0.15); */
+  
   backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(8px); 
+  -webkit-backdrop-filter: blur(8px);
   margin: 0 0 8px;
-  font-size: 1.5rem;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
   line-height: 1.1;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+
+  /* Fixed size */
+  width: 200px;
+
+  /* Optional: Center text vertically */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
 
 .overlay button {
   margin-top: 10px;
@@ -191,10 +204,10 @@
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  border: 2px solid rgba(0,0,0,0.2);
+  border: 1px solid rgba(0,0,0,0.2);
   background: rgba(255,255,255,0.6);
   cursor: pointer;
   transition: transform .2s;
@@ -203,7 +216,6 @@
 .dot.selected {
   background: #DB572B;
   border-color: #DB572B;
-  transform: scale(1.2);
 }
 
 /* responsive: stack on narrow */
@@ -218,5 +230,20 @@
     right: 4px;
   }
 }
+
+.category-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  padding: 2px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.category-img:hover {
+  transform: scale(1.05);
+}
+
 
 
