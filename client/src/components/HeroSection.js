@@ -108,6 +108,32 @@ export default function HeroSection() {
           />
         ))}
       </div>
+      <div className='container'>
+       <div className='col-md-6 mx-auto'>
+  <div className="d-flex flex-wrap justify-content-center gap-3">
+    {[
+      { label: 'Cow', image: '/cow.jpg' },
+      { label: 'Buffalo', image: '/buffelo.jpg' },
+      { label: 'Goat', image: 'goat.jpg' },
+      { label: 'Sheep', image: '/sheep.jpg' },
+      { label: 'Ox', image: '/ox.jpeg' },
+      { label: 'Others', image: '/others.png' }
+    ].map((item, i) => (
+      <div key={i} className="text-center">
+        <img
+          src={item.image}
+          alt={item.label}
+          className="rounded-circle category-img shadow-sm"
+        />
+        <div className="fw-semibold mt-1">{item.label}</div>
+      </div>
+    ))}
+  </div>
+</div>
+
+      </div>
     </div>
+
+    
   );
 }
