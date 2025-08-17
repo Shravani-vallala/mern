@@ -2,14 +2,15 @@ import React from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { FaHome, FaSignInAlt, FaShoppingCart, FaBalanceScale, FaEllipsisV } from 'react-icons/fa';
 import { BsPersonCircle } from 'react-icons/bs';
-import '../App.css'; // Make sure your CSS contains the custom styles
+import { Link } from 'react-router-dom'; // ✅ Import Link
+import '../App.css';
 
 function Header() {
   return (
     <Navbar bg="white" expand="lg" className="border-bottom shadow-sm">
       <Container>
         {/* Logo Section */}
-        <Navbar.Brand href="#">
+        <Navbar.Brand as={Link} to="/">
           <img
             src="/logo192.png"
             alt="Pashushala Logo"
@@ -23,12 +24,13 @@ function Header() {
         <Navbar.Collapse>
           <Nav className="ms-auto align-items-center">
             <li className="border-end">
-              <Nav.Link href="#" className="text-black">
+              <Nav.Link as={Link} to="/" className="text-black">
                 <FaHome className="me-1 pashu-icon" /> PashuBazaar
               </Nav.Link>
             </li>
             <li className="border-end">
-              <Nav.Link href="#" className="text-black">
+              {/* ✅ Link to Sign In Page */}
+              <Nav.Link as={Link} to="/signin" className="text-black">
                 <FaSignInAlt className="me-1 pashu-icon" /> Sign In
               </Nav.Link>
             </li>
