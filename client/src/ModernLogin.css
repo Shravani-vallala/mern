@@ -8,7 +8,7 @@
 .modern-login-container {
   display: flex;
   min-height: 100vh;
-  background: linear-gradient(to right, #8360c3, #2ebf91);
+  background: linear-gradient(to right, #DB572B,#2ebf91);
   align-items: center;
   justify-content: center;
   padding: 20px;
@@ -83,7 +83,7 @@
 
 .login-btn {
   width: 100%;
-  background-color: #fbbc04;
+  background-color: #DB572B;
   color: white;
   font-weight: bold;
   padding: 12px;
@@ -95,7 +95,7 @@
 }
 
 .login-btn:hover {
-  background-color: #f9a825;
+  background-color: #DB572B;
 }
 
 .register-text {
@@ -112,7 +112,7 @@
 .login-container {
   display: flex;
   height: 100vh;
-  background: linear-gradient(to right, #4b2fe1, #7c4dff);
+  background: linear-gradient(to right, #DB572B, #DB572B);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -124,6 +124,7 @@
   background-color: #ffffff;
   padding: 40px;
 }
+
 
 .login-image {
   width: 90%;
@@ -181,13 +182,13 @@
 
 .form-options a {
   text-decoration: none;
-  color: #4b2fe1;
+  color: #DB572B;
 }
 
 .login-btn {
   width: 100%;
   padding: 10px;
-  background-color: #4b2fe1;
+  background-color: #DB572B;
   border: none;
   border-radius: 6px;
   font-weight: bold;
@@ -198,7 +199,7 @@
 }
 
 .login-btn:hover {
-  background-color: #4b2fe1;
+  background-color: #DB572B;
 }
 
 .register-text {
@@ -208,7 +209,7 @@
 }
 
 .register-text a {
-  color: #4b2fe1;
+  color: #DB572B;
   font-weight: 500;
   text-decoration: none;
 }
