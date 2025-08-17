@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { loginUser, initCSRF,registerUser} from '../Api';
-import '../ModernLogin.css'; // external CSS file
+import { loginUser, initCSRF } from './Api';
+import './ModernLogin.css'; // external CSS file
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -28,7 +28,6 @@ export default function Login() {
           alt="Login Illustration"
           className="login-image"
         />
-          <div className="image-overlay"></div>
       </div>
       <div className="login-right">
         <form className="login-form" onSubmit={handleSubmit}>
